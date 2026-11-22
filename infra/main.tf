@@ -25,8 +25,9 @@ resource "aws_s3_bucket" "demo" {
   bucket = "bobo-ops01-tf-cicd-demo-use1"
 
   tags = {
-    Project   = "terraform-cicd-pipeline"
-    ManagedBy = "terraform-github-actions"
+    Project     = "terraform-cicd-pipeline"
+    ManagedBy   = "terraform-github-actions"
+    Environment = "demo"
   }
 }
 

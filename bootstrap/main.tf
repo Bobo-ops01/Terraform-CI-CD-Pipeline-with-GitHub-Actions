@@ -71,8 +71,8 @@ data "aws_iam_policy_document" "assume" {
       test     = "StringEquals"
       variable = "token.actions.githubusercontent.com:sub"
       values = [
-        "repo:${local.github_repo}:pull_request",
-        "repo:${local.github_repo}:environment:production",
+        "repo:Bobo-ops01@192600435/Terraform-CI-CD-Pipeline-with-GitHub-Actions@1461938826:pull_request",
+        "repo:Bobo-ops01@192600435/Terraform-CI-CD-Pipeline-with-GitHub-Actions@1461938826:environment:production",
       ]
     }
   }
